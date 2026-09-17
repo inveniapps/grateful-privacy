@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dias Bons — Política de Privacidade</title>
+<style>
+  :root {
+    --bg: #fcfdfb;
+    --fg: #1b1c1a;
+    --muted: #5c5f5a;
+    --accent: #2e9e6b;
+    --line: #e3e7e1;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111412;
+      --fg: #e8eae6;
+      --muted: #a0a49d;
+      --accent: #6cc79b;
+      --line: #262b27;
+      --card: #171b18;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  .app { font-weight: 600; font-size: 1.05rem; }
+  .app span { color: var(--accent); }
+  .langs { display: flex; gap: .4rem; }
+  .langs button {
+    font: inherit;
+    font-size: .9rem;
+    padding: .35rem .85rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] {
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.12rem; margin: 2rem 0 .5rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .4rem; }
+  .highlight {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.5rem;
+  }
+  .highlight p { margin: 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="app">Dias Bons <span>💚</span></div>
+    <div class="langs">
+      <button type="button" data-lang="pt" aria-pressed="true">Português</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ---------------- Português ---------------- -->
+  <section id="pt" lang="pt-BR">
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Atualizada em 17 de setembro de 2026</p>
+
+    <div class="highlight">
+      <p>O <strong>Dias Bons</strong> não coleta nem compartilha nenhum dado pessoal, e não tem servidor próprio. O que você escreve fica no seu aparelho.</p>
+    </div>
+
+    <h2>O que fica no aparelho</h2>
+    <p>Suas entradas, tags e ajustes são guardados apenas no armazenamento privado do app, no seu próprio aparelho. O app funciona offline, não pede cadastro nem login, não exibe anúncios e não usa ferramentas de análise de uso. Ninguém lê nem analisa o que você escreve.</p>
+
+    <h2>Backup no Google Drive (opcional)</h2>
+    <p>O backup vem desligado. Se você ligar, uma cópia das suas entradas e tags é enviada direto do seu aparelho para uma pasta privada do app dentro do <strong>seu próprio</strong> Google Drive, usando o escopo <code>drive.appdata</code>. Essa pasta só pode ser acessada por este app: nem outros apps, nem nós.</p>
+    <ul>
+      <li>Nós nunca recebemos essa cópia, porque ela não passa por nenhum servidor nosso.</li>
+      <li>O PIN e os ajustes do aparelho não entram no backup.</li>
+      <li>Você pode apagar a cópia a qualquer momento, em Ajustes → Backup no Google Drive → Apagar backup do Drive.</li>
+      <li>Para remover também o acesso do app à sua conta, vá em Conta Google → Segurança → Apps de terceiros.</li>
+    </ul>
+
+    <h2>Compras</h2>
+    <p>As gorjetas de apoio são processadas pelo Google Play, segundo a política de privacidade da Google. O app apenas verifica se existe uma compra, para ligar ou desligar os benefícios de Apoiador. Não recebemos dados de pagamento.</p>
+
+    <h2>Exportar</h2>
+    <p>Arquivos em PDF ou texto só são criados quando você pede, e ficam no local que você escolher no aparelho. Nada é enviado a lugar nenhum.</p>
+
+    <h2>Permissões</h2>
+    <ul>
+      <li><strong>Notificações</strong>: para o lembrete diário, se você ligar.</li>
+      <li><strong>Iniciar após reinício</strong>: para reagendar esse lembrete quando o aparelho é reiniciado.</li>
+      <li><strong>Internet</strong>: usada apenas pelo backup opcional no Drive e pela loja do Google Play.</li>
+    </ul>
+
+    <h2>Crianças</h2>
+    <p>O app não é direcionado a crianças e não coleta dados de ninguém, de qualquer idade.</p>
+
+    <h2>Apagar seus dados</h2>
+    <p>Desinstalar o app apaga todos os dados dele do aparelho. Se você usou o backup, apague a cópia no Drive pelo botão dentro do app antes de desinstalar.</p>
+
+    <h2>Mudanças</h2>
+    <p>Se esta política mudar, a data no topo é atualizada e a versão nova fica nesta mesma página.</p>
+
+    <h2>Contato</h2>
+    <p>Dúvidas ou pedidos: <a href="mailto:inveniapps@gmail.com">inveniapps@gmail.com</a> · <a href="https://x.com/InveniApps">@InveniApps</a></p>
+  </section>
+
+  <!-- ---------------- English ---------------- -->
+  <section id="en" lang="en" hidden>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 17 September 2026</p>
+
+    <div class="highlight">
+      <p><strong>Grateful</strong> does not collect or share any personal data, and has no server of its own. What you write stays on your device.</p>
+    </div>
+
+    <h2>What stays on your device</h2>
+    <p>Your entries, tags and settings are kept only in the app's private storage on your own device. The app works offline, has no sign-up or login, shows no ads, and uses no analytics. Nobody reads or analyzes what you write.</p>
+
+    <h2>Google Drive backup (optional)</h2>
+    <p>Backup is off by default. If you turn it on, a copy of your entries and tags is sent straight from your device to a private app folder inside <strong>your own</strong> Google Drive, using the <code>drive.appdata</code> scope. Only this app can reach that folder: not other apps, and not us.</p>
+    <ul>
+      <li>We never receive that copy, because it does not pass through any server of ours.</li>
+      <li>Your PIN and device settings are not included in the backup.</li>
+      <li>You can delete the copy at any time in Settings → Google Drive backup → Delete backup from Drive.</li>
+      <li>To also remove the app's access to your account, go to your Google Account → Security → Third-party apps.</li>
+    </ul>
+
+    <h2>Purchases</h2>
+    <p>Support tips are processed by Google Play, under Google's privacy policy. The app only checks whether a purchase exists, to turn Supporter benefits on or off. We receive no payment data.</p>
+
+    <h2>Export</h2>
+    <p>PDF and text files are created only when you ask for them, and saved wherever you choose on your device. Nothing is sent anywhere.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Notifications</strong>: for the daily reminder, if you turn it on.</li>
+      <li><strong>Run after restart</strong>: to reschedule that reminder when the device reboots.</li>
+      <li><strong>Internet</strong>: used only by the optional Drive backup and by the Google Play store.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children, and collects no data from anyone, of any age.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Uninstalling the app deletes all of its data from the device. If you used backup, delete the Drive copy with the button inside the app before uninstalling.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the date at the top is updated and the new version appears on this same page.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or requests: <a href="mailto:inveniapps@gmail.com">inveniapps@gmail.com</a> · <a href="https://x.com/InveniApps">@InveniApps</a></p>
+  </section>
+
+  <footer>Inveni Apps · Dias Bons / Grateful</footer>
+</main>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langs button');
+    function show(lang) {
+      document.getElementById('pt').hidden = lang !== 'pt';
+      document.getElementById('en').hidden = lang !== 'en';
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+      document.title = lang === 'pt'
+        ? 'Dias Bons — Política de Privacidade'
+        : 'Grateful — Privacy Policy';
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+      });
+      if (location.hash !== '#' + lang) history.replaceState(null, '', '#' + lang);
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.lang); });
+    });
+    // Link direto (#en) manda; senão, segue o idioma do navegador.
+    var fromHash = location.hash.replace('#', '');
+    show(fromHash === 'en' || fromHash === 'pt'
+      ? fromHash
+      : ((navigator.language || 'en').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en'));
+  })();
+</script>
+</body>
+</html>
